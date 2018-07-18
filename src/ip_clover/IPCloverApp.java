@@ -5,6 +5,7 @@
  */
 package ip_clover;
 
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -19,6 +20,7 @@ public class IPCloverApp extends javax.swing.JFrame {
      */
     public IPCloverApp() {
         initComponents();
+        setIcon();
     }
 
     /**
@@ -248,6 +250,10 @@ public class IPCloverApp extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_SubmitButtonActionPerformed
 
+    private void setIcon() {
+     setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("IPCloverAssets.png")));
+    }
+    
     /**
      * @param args the command line arguments
      */
